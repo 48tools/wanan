@@ -1,0 +1,64 @@
+
+
+@sender-color: #666666;
+@text-color: #333333;
+@topic-color: #ff6700;
+
+.wanan-container {
+  position: relative;
+  width: 375px;
+  &.small {
+    width: 320px;
+  }
+
+  .hashtag {
+    margin: 0 4px;
+  }
+
+  .contents {
+    margin-bottom: 10px;
+  }
+
+  .wanan-item {
+    margin-left: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0;
+    padding-right: 16px;
+    font-size: 16px;
+    .wanan-content-header {
+      margin-bottom: 5px;
+    }
+    .sender-avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+      border-radius: 50%;
+    }
+
+    .wanan-sender {
+      color: @sender-color;
+    }
+
+    .create-time {
+      font-size: 14px;
+      color: @sender-color;
+      opacity: .95;
+    }
+    .wanan-text {
+      color: @text-color;
+      word-break: break-all;
+    }
+  }
+
+  .topic-title {
+    font-size: 24px;
+  }
+
+  .wanan-footer,
+  .wanan-header {
+    img {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.flex {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.flex.vertical {
+  flex-direction: column;
+}
+.flex > .cell {
+  flex: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  display: block;
+  padding: 0 !important;
+  position: relative;
+}
+.flex > .flex-grow-2 {
+  flex-grow: 2;
+}
+.flex > .cell.fixed {
+  flex: none !important;
+  width: auto;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.align-start {
+  align-items: flex-start;
+}
+.flex.align-end {
+  align-items: flex-end;
+}
